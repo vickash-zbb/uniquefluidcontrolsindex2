@@ -1,0 +1,36 @@
+body{
+    
+}
+
+.wel__text {
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+
+    // padding: 50px;
+    p {
+        line-height: 2rem;
+        text-align: start;
+    }
+
+    h1 {
+        padding: 10px;
+        padding-bottom: 10px;
+        font-weight: 900;
+        // margin-top: 10%;
+    }
+
+    .heading ::after {
+        width: 10px;
+        color: red;
+    }
+
+}
+
+.welcome__section{
+    background-color: $white;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+   

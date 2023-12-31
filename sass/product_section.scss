@@ -1,0 +1,244 @@
+.product_section{
+    background-color: #e0e0e080;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#product_section{
+
+    
+    .card{
+        height: fit-content;
+       width: 300px;
+       border: initial;
+       margin-left: 10px;
+    //    margin-bottom: 100px;
+    }
+    img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        padding: 24px;
+    }
+    .card__ctn{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    h5{
+        font-weight: 600;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    p{
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 14px;
+        // text-align: start;
+    }
+    .btn{
+        background-color: $primary;
+        border: none;
+    }
+}
+//////////////////////
+/// ////////////////
+/// /////////////
+
+a:hover {
+  text-decoration: none;
+}
+
+.np {
+  padding: 0px;
+}
+
+
+.featuredPropBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: outside none none;
+  padding: 0;
+}
+
+.featuredPropBox ul li {
+  background-color: #eeeeee;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 250px;
+  margin: 5px;
+  width: 32%;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.featuredPropBox ul li:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(22, 22, 22, 0.6);
+  transition: all 0.3s;
+}
+
+.featuredPropBox ul li:nth-child(1) {
+  background-image: url("../asset/image/pro-1.jpg");
+}
+
+.featuredPropBox ul li:nth-child(2) {
+  background-image: url("../asset/image/pro-2.jpeg");
+}
+
+.featuredPropBox ul li:nth-child(3) {
+  background-image: url("../asset/image/pro-3.jpeg");
+}
+
+.featuredPropBox ul li:nth-child(4) {
+  background-image: url("../asset/image/pro-4.jpeg");
+}
+
+.featuredPropBox ul li:nth-child(5) {
+  background-image: url("../asset/image/pro-5.jpeg");
+}
+.featuredPropBox ul li:nth-child(6) {
+  background-image: url("../asset/image/pro-6.jpeg");
+}
+
+.featuredPropBox ul li:nth-child(7) {
+  background-image: url("https://i.ibb.co/hLcmWbT/15646.jpg");
+}
+
+.featuredPropBox ul li:nth-child(8) {
+  background-image: url("https://i.ibb.co/89P5rTs/15678.jpg");
+}
+
+.featuredPropBox ul li:nth-child(9) {
+  background-image: url("https://i.ibb.co/RhZgpSG/20845.jpg");
+}
+
+.featuredPropBox ul li .fplogo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+//   width: 60%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.featuredPropBox ul li .fplogo img {
+  width: 100%;
+}
+
+.featuredPropBox ul li .fptext {
+  display: none;
+  font-size: 16px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  width: 65%;
+  z-index: 1;
+}
+
+.featuredPropBox ul li .fptext p {
+  color: #fff;
+  margin: 0px;
+}
+
+.featuredPropBox ul li:hover {
+  box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2) inset;
+}
+
+.featuredPropBox ul li:hover:after {
+  background-color: rgba(22, 22, 22, 0.3);
+}
+
+.featuredPropBox ul li:hover .fplogo {
+  display: none;
+}
+
+.featuredPropBox ul li:hover .fptext {
+  display: block;
+}
+.fplogo h2{
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-size: 24px;
+    line-height: 2rem;
+
+}
+.fptext span{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 20px;
+}
+.product_card{
+    background-color: $bg;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+// heading
+.section-header{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 24px;
+
+}
+.section-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    color: #2e3135;
+  }
+  
+  .section-header h1:before,
+  .section-header h1:after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: $primary;
+    display: inline-block;
+  }
+  
+  .section-header h1:before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-header h1:after {
+    margin: 0 0 10px 15px;
+  }
+
+  @media screen and (max-width:600px) {
+    .featuredPropBox ul li {
+      width: 100%;
+  }
+
+  
+  .section-header h1:after 
+   {position: relative;
+        height: 4px;
+        width: 20%;
+        top: 5px;
+        /* color: red; */
+        display: inline-block;
+        background:$primary;
+        /* right: 150px; */}
+    
+    }
+

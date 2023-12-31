@@ -1,0 +1,62 @@
+@import "./Mixins.scss";
+
+
+#footer{
+    a{
+        text-decoration: none;
+        color: initial;
+        color: $text;
+    }
+    a:hover{
+        color: $primary;
+    }
+    i{
+        font-size: 24px;
+        margin: 10px;
+        color: $primary;
+    }
+    
+    li{
+        list-style: none;
+        text-transform: capitalize;
+        
+    }
+    .section-footer h2::after{
+        content: "";
+        position: relative;
+        height: 4px;
+        width: 20%;
+        top: 5px;
+        /* color: red; */
+        display: block;
+        background:$primary;
+        /* right: 150px; */
+    
+    }
+    h2{
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        font-size: 24px;
+    }
+    ul {
+        padding-left: 0;
+       
+    }
+    p{
+        color: $text;
+    }
+}
+.footer{
+    background: white;
+    padding-top: 50px;
+}
+
+
+
+
+////////////////////////////////
+/// //////////////
+/// //////////////
+/// ////////////
+
